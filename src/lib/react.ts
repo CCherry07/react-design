@@ -3,6 +3,7 @@ declare module _JSX {
   export interface Props {
     className: string;
     children: JSX;
+    style:Record<string,any>
   }
 
   export interface JSX {
