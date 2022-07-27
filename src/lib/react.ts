@@ -2,7 +2,7 @@ import { REACT_TEXT } from "./const";
 declare module _JSX {
   export interface Props {
     className: string;
-    children: JSX;
+    children: JSX[] | string;
     style:Record<string,any>
   }
 
@@ -38,3 +38,7 @@ export function createElement(type: string, config: { __self: any; __source: any
     }
   }
 }
+
+const React = {createElement}
+
+export default React
